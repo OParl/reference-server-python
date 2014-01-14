@@ -110,9 +110,7 @@
             "committees": [
                 "http://127.0.0.1:5000/bodies/0/committees/0"
             ],
-            "organisations": [
-                "http://127.0.0.1:5000/bodies/0/organisations/0"
-            ],
+            "organisations": [],
             "last_modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
@@ -120,7 +118,11 @@
         {
             "@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
             "body": "http://127.0.0.1:5000/bodies/0",
-            "name": "Komische Partei Deutschlands (KoPaD)"
+            "name": "Komische Partei Deutschlands (KoPaD)",
+            "members": [
+                "http://127.0.0.1:5000/bodies/0/people/0",
+                "http://127.0.0.1:5000/bodies/0/people/1"
+            ]
         }
     ]
 }
