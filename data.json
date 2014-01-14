@@ -4,7 +4,7 @@
         "info_url": "https://github.com/OParl/reference-server",
         "product_url": "https://github.com/OParl/reference-server",
         "vendor_url": "http://oparl.de/",
-        "oparl_version": "1.0",
+        "oparl_version": "http://oparl.de/spezifikation/1.0/",
         "bodies": [
             "http://127.0.0.1:5000/bodies/0"
         ],
