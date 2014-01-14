@@ -17,7 +17,7 @@ Sobald die Sepzifikation 1.0 verabschieded ist, kann der Code daran angepasst we
 
 	mkdir OParl
 	cd OParl
-    git clone https://github.com/marians/reference-server.git
+    git clone https://github.com/OParl/reference-server.git
     cd reference-server
     virtualenv venv
     source venv/bin/activate
