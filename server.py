@@ -1,5 +1,6 @@
 # encoding: utf-8
 
+import os
 import json
 from flask import Flask
 from flask import Response
@@ -114,3 +115,22 @@ def person_details(person):
 
 if __name__ == "__main__":
     app.run(debug=True)
+else:
+    # production mode - replace all URLs
+    print("WARNING: Running reference server in production mode.")
+    print("You don't want that unless you are hosting http://refserv.oparl.de/")
+    app.config["SERVER_NAME"] = "refserv.oparl.de"
+
+    def replace_hostname(m, hostname):
+        print type(m)
+        if type(m) == dict:
+            for key in m.keys():
+                m[key] = replace_hostname(m[key])
+        elif type(m) == list:
+            for n in range(len(m)):
+                m[n] = replace_hostname(m[n])
+        elif type(m) == unicode:
+            m = m.replace("127.0.0.1:5000", hostname)
+        return m
+
+    model = replace_hostname(model, app.config["SERVER_NAME"])
