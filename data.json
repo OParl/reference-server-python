@@ -54,8 +54,8 @@
             ],
             "location": {},
             "agendaitems": [
-                "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/0"
-                "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/1"
+                "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/0",
+                "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/1",
                 "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/2"
             ],
             "invitation": "http://127.0.0.1:5000/bodies/0/meetings/0/invitation",
