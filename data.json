@@ -118,6 +118,7 @@
         {
             "@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
             "body": "http://127.0.0.1:5000/bodies/0",
+            "reference": "KoPaD",
             "name": "Komische Partei Deutschlands (KoPaD)",
             "members": [
                 "http://127.0.0.1:5000/bodies/0/people/0",
