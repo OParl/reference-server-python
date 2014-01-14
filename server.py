@@ -77,7 +77,7 @@ def organisations_list():
     """
     Show all organisations
     """
-    return jsonify(model["organisations"])
+    return jsonify(gather_ids(model["organisations"]))
 
 
 @app.route("/bodies/0/people/")
@@ -85,8 +85,7 @@ def people_list():
     """
     Show all people
     """
-    return jsonify(model["people"])
-
+    return jsonify(gather_ids(model["people"]))
 
 
 if __name__ == "__main__":
