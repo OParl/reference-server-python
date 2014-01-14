@@ -69,7 +69,15 @@ def meetings_list():
     """
     Show all meetings
     """
-    return jsonify(model["meetings"])
+    return jsonify(gather_ids(model["meetings"]))
+
+
+@app.route("/bodies/0/meetings/<int:meeting>")
+def meeting_details(meeting):
+    """
+    Show details of a meeting
+    """
+    return jsonify(model["meetings"][meeting])
 
 
 @app.route("/bodies/0/organisations/")
@@ -80,12 +88,28 @@ def organisations_list():
     return jsonify(gather_ids(model["organisations"]))
 
 
+@app.route("/bodies/0/organisations/<int:organisation>")
+def organisation_details(organisation):
+    """
+    Show details of an organisation
+    """
+    return jsonify(model["organisations"][organisation])
+
+
 @app.route("/bodies/0/people/")
 def people_list():
     """
     Show all people
     """
     return jsonify(gather_ids(model["people"]))
+
+
+@app.route("/bodies/0/people/<int:person>")
+def person_details(person):
+    """
+    Show details of a person
+    """
+    return jsonify(model["people"][person])
 
 
 if __name__ == "__main__":
