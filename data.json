@@ -1,5 +1,6 @@
 {
     "system": {
+        "name": "OParl Reference Server",
         "oparl_version": "1.0",
         "bodies": [
             "http://127.0.0.1:5000/bodies/0"
