@@ -10,8 +10,18 @@ model = json.load(open("data.json", "rb"))
 
 
 def jsonify(data):
+    """
+    Create JSON response
+    """
     return Response(content_type="application/json",
         response=json.dumps(data, sort_keys=True, indent=4))
+
+
+def gather_ids(thelist):
+    """
+    Collect item ids from a list of dicts
+    """
+    return [x["@id"] for x in thelist]
 
 
 @app.route("/")
@@ -27,7 +37,7 @@ def bodies_list():
     """
     Show list of bodies
     """
-    return jsonify(model["bodies"])
+    return jsonify(gather_ids(model["bodies"]))
 
 
 @app.route("/bodies/<int:body>")
@@ -43,7 +53,15 @@ def committees_list():
     """
     Show all committees
     """
-    return jsonify(model["committees"])
+    return jsonify(gather_ids(model["committees"]))
+
+
+@app.route("/bodies/0/committees/<int:committee>")
+def committee_details(committee):
+    """
+    Show details of a committee
+    """
+    return jsonify(model["committees"][committee])
 
 
 @app.route("/bodies/0/meetings/")
