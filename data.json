@@ -5,9 +5,7 @@
         "product_url": "https://github.com/OParl/reference-server",
         "vendor_url": "http://oparl.de/",
         "oparl_version": "http://oparl.de/spezifikation/1.0/",
-        "bodies": [
-            "http://127.0.0.1:5000/bodies/0"
-        ],
+        "bodies_url": "http://127.0.0.1:5000/bodies/",
         "contact": {
             "name": "RIS-Betreuung",
             "email": "ris@stadt-koeln.de"
