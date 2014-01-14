@@ -24,7 +24,7 @@ Sobald die Sepzifikation 1.0 verabschieded ist, kann der Code daran angepasst we
     pip install -r requirements.txt
     python server.py
 
-Der Aufruf des Servers über http://127.0.0.1:5000/
+Der Aufruf des Servers erfolgt über die URL http://127.0.0.1:5000/
 
 ### Systemvoraussetzungen
 
