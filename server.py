@@ -133,3 +133,5 @@ else:
         return m
 
     model = replace_hostname(model, app.config["SERVER_NAME"])
+
+    print(app.config)
