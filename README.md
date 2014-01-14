@@ -5,6 +5,8 @@ Eine serverseitige Referenz-Implementierung der OParl API mit Beispieldaten.
 
 Dieser Server kann als Gegenstück für die Entwicklung des [Validierungs-Clients](https://github.com/OParl/validator) genutzt werden.
 
+Eine öffentliche Instanz dieser Software läuft unter http://refserv.oparl.de/ .
+
 ## Status
 
 Der Reference Server ist nicht auf dem gleichen Stand wie die [Spezifikation](https://github.com/OParl/specs).
@@ -34,4 +36,4 @@ Es wird Python 2.7, git, virtualenv und pip benötigt.
 
 Die Implementierung des Servers ist in der Datei [server.py](https://github.com/OParl/reference-server/blob/master/server.py) enthalten und basiert auf dem [Flask](http://flask.pocoo.org/) Framework.
 
-Die Beispieldaten sind in Form der JSON-Datei [data.json](https://github.com/OParl/reference-server/blob/master/data.json) enthalten.
+Die Beispieldaten sind in Form der JSON-Datei [data.json](https://github.com/OParl/reference-server/blob/master/data.json) enthalten. Alle URls, die sich auf das Referenz-System beziehen, verwenden den Hostnamen "127.0.0.1:5000". Für die öffentliche Instanz wird dies automatisch in "refserv.oparl.de" umgewandelt.
