@@ -1,6 +1,7 @@
 {
     "system": {
         "name": "OParl Reference Server",
+        "info_url": "https://github.com/OParl/reference-server",
         "oparl_version": "1.0",
         "bodies": [
             "http://127.0.0.1:5000/bodies/0"
