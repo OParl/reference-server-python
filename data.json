@@ -1,124 +1,124 @@
 {
-	"system": {
-		"oparl_version": "1.0",
-		"bodies": [
-			"http://127.0.0.1:5000/bodies/0"
-		],
-		"contact": {
-			"name": "RIS-Betreuung",
-			"email": "ris@stadt-koeln.de"
-		},
-		"license": "http://creativecommons.org/licenses/by/4.0/"
-	},
-	"bodies": [
-		{
-			"@id": "http://127.0.0.1:5000/bodies/0",
-			"name": "Stadt Köln",
-			"name_long": "Stadt Köln, kreisfreie Stadt",
-			"rgs": "053150000000",
-			"gnd_url": "http://d-nb.info/gnd/2015732-0",
-			"url": "http://www.stadt-koeln.de/",
-			"contact": {
-				"name": "RIS-Betreuung",
-				"email": "ris@stadt-koeln.de"
-			},
-			"committees_url": "http://127.0.0.1:5000/bodies/0/committees/",
-			"organisations_url": "http://127.0.0.1:5000/bodies/0/organisations/",
-			"meetings_url": "http://127.0.0.1:5000/bodies/0/meetings/",
-			"people_url": "http://127.0.0.1:5000/bodies/0/people/",
-			"papers_url": "http://127.0.0.1:5000/bodies/0/papers/",
-			"new_objects_url": "http://127.0.0.1:5000/bodies/0/_new/",
-			"updated_objects_url": "http://127.0.0.1:5000/bodies/0/_updated/",
-			"removed_objects_url": "http://127.0.0.1:5000/bodies/0/_deleted/",
-			"last_modified": "2014-01-08T14:28:31.568+0100"
-		}
-	],
-	"meetings": [
-		{
-			"@id": "http://127.0.0.1:5000/bodies/0/meetings/0",
-			"body": "http://127.0.0.1:5000/bodies/0",
-			"name": "Erste Sitzung des Hauptausschusses",
-			"reference": "HA/0034/2014",
-			"sequence_number": 1,
-			"start": "2014-01-21T09:30:00+0100",
-			"end": "2014-01-21T19:49:00+0100",
-			"committees": [
-				"http://127.0.0.1:5000/bodies/0/committees/0"
-			],
-			"participants": [
-				"http://127.0.0.1:5000/bodies/0/people/0",
-				"http://127.0.0.1:5000/bodies/0/people/1",
-				"http://127.0.0.1:5000/bodies/0/people/2"
-			],
-			"location": {},
-			"last_modified": "2014-01-08T14:28:31.568+0100"
-		}
-	],
-	"committees": [
-		{
-			"@id": "http://127.0.0.1:5000/bodies/0/committees/0",
-			"body": "http://127.0.0.1:5000/bodies/0",
-			"name": "Hauptausschuss",
-			"reference": "HA",
-			"name_long": "Hauptausschuss der Stadt Köln",
-			"members": [
-				"http://127.0.0.1:5000/bodies/0/people/0",
-				"http://127.0.0.1:5000/bodies/0/people/1",
-				"http://127.0.0.1:5000/bodies/0/people/2"
-			],
-			"last_modified": "2014-01-08T14:28:31.568+0100"
-		}
-	],
-	"people": [
-		{
-			"@id": "http://127.0.0.1:5000/bodies/0/people/0",
-			"body": "http://127.0.0.1:5000/bodies/0",
-			"first_name": "Annemie",
-			"last_name": "Hülchrath",
-			"academic_title": "Dr.",
-			"email": "annemie.huelchrath.koeln@abgeordnetenwatch.de",
-			"phone": "+49 221 1234567",
-			"address": "Alter Markt 1, 50123 Köln",
-			"committees": [
-				"http://127.0.0.1:5000/bodies/0/committees/0"
-			],
-			"organisations": [
-				"http://127.0.0.1:5000/bodies/0/organisations/0"
-			],
-			"last_modified": "2014-01-08T14:28:31.568+0100"
-		},
-		{
-			"@id": "http://127.0.0.1:5000/bodies/0/people/1",
-			"body": "http://127.0.0.1:5000/bodies/0",
-			"first_name": "Herbert",
-			"last_name": "Knebel",
-			"committees": [
-				"http://127.0.0.1:5000/bodies/0/committees/0"
-			],
-			"organisations": [
-				"http://127.0.0.1:5000/bodies/0/organisations/0"
-			],
-			"last_modified": "2014-01-08T14:28:31.568+0100"
-		},
-		{
-			"@id": "http://127.0.0.1:5000/bodies/0/people/2",
-			"body": "http://127.0.0.1:5000/bodies/0",
-			"first_name": "Horst",
-			"last_name": "Schlämmer",
-			"committees": [
-				"http://127.0.0.1:5000/bodies/0/committees/0"
-			],
-			"organisations": [
-				"http://127.0.0.1:5000/bodies/0/organisations/0"
-			],
-			"last_modified": "2014-01-08T14:28:31.568+0100"
-		}
-	],
-	"organisations": [
-		{
-			"@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
-			"body": "http://127.0.0.1:5000/bodies/0",
-			"name": "Komische Partei Deutschlands (KoPaD)"
-		}
-	]
+    "system": {
+        "oparl_version": "1.0",
+        "bodies": [
+            "http://127.0.0.1:5000/bodies/0"
+        ],
+        "contact": {
+            "name": "RIS-Betreuung",
+            "email": "ris@stadt-koeln.de"
+        },
+        "license": "http://creativecommons.org/licenses/by/4.0/"
+    },
+    "bodies": [
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0",
+            "name": "Stadt Köln",
+            "name_long": "Stadt Köln, kreisfreie Stadt",
+            "rgs": "053150000000",
+            "gnd_url": "http://d-nb.info/gnd/2015732-0",
+            "url": "http://www.stadt-koeln.de/",
+            "contact": {
+                "name": "RIS-Betreuung",
+                "email": "ris@stadt-koeln.de"
+            },
+            "committees_url": "http://127.0.0.1:5000/bodies/0/committees/",
+            "organisations_url": "http://127.0.0.1:5000/bodies/0/organisations/",
+            "meetings_url": "http://127.0.0.1:5000/bodies/0/meetings/",
+            "people_url": "http://127.0.0.1:5000/bodies/0/people/",
+            "papers_url": "http://127.0.0.1:5000/bodies/0/papers/",
+            "new_objects_url": "http://127.0.0.1:5000/bodies/0/_new/",
+            "updated_objects_url": "http://127.0.0.1:5000/bodies/0/_updated/",
+            "removed_objects_url": "http://127.0.0.1:5000/bodies/0/_deleted/",
+            "last_modified": "2014-01-08T14:28:31.568+0100"
+        }
+    ],
+    "meetings": [
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/meetings/0",
+            "body": "http://127.0.0.1:5000/bodies/0",
+            "name": "Erste Sitzung des Hauptausschusses",
+            "reference": "HA/0034/2014",
+            "sequence_number": 1,
+            "start": "2014-01-21T09:30:00+0100",
+            "end": "2014-01-21T19:49:00+0100",
+            "committees": [
+                "http://127.0.0.1:5000/bodies/0/committees/0"
+            ],
+            "participants": [
+                "http://127.0.0.1:5000/bodies/0/people/0",
+                "http://127.0.0.1:5000/bodies/0/people/1",
+                "http://127.0.0.1:5000/bodies/0/people/2"
+            ],
+            "location": {},
+            "last_modified": "2014-01-08T14:28:31.568+0100"
+        }
+    ],
+    "committees": [
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/committees/0",
+            "body": "http://127.0.0.1:5000/bodies/0",
+            "name": "Hauptausschuss",
+            "reference": "HA",
+            "name_long": "Hauptausschuss der Stadt Köln",
+            "members": [
+                "http://127.0.0.1:5000/bodies/0/people/0",
+                "http://127.0.0.1:5000/bodies/0/people/1",
+                "http://127.0.0.1:5000/bodies/0/people/2"
+            ],
+            "last_modified": "2014-01-08T14:28:31.568+0100"
+        }
+    ],
+    "people": [
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/people/0",
+            "body": "http://127.0.0.1:5000/bodies/0",
+            "first_name": "Annemie",
+            "last_name": "Hülchrath",
+            "academic_title": "Dr.",
+            "email": "annemie.huelchrath.koeln@abgeordnetenwatch.de",
+            "phone": "+49 221 1234567",
+            "address": "Alter Markt 1, 50123 Köln",
+            "committees": [
+                "http://127.0.0.1:5000/bodies/0/committees/0"
+            ],
+            "organisations": [
+                "http://127.0.0.1:5000/bodies/0/organisations/0"
+            ],
+            "last_modified": "2014-01-08T14:28:31.568+0100"
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/people/1",
+            "body": "http://127.0.0.1:5000/bodies/0",
+            "first_name": "Herbert",
+            "last_name": "Knebel",
+            "committees": [
+                "http://127.0.0.1:5000/bodies/0/committees/0"
+            ],
+            "organisations": [
+                "http://127.0.0.1:5000/bodies/0/organisations/0"
+            ],
+            "last_modified": "2014-01-08T14:28:31.568+0100"
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/people/2",
+            "body": "http://127.0.0.1:5000/bodies/0",
+            "first_name": "Horst",
+            "last_name": "Schlämmer",
+            "committees": [
+                "http://127.0.0.1:5000/bodies/0/committees/0"
+            ],
+            "organisations": [
+                "http://127.0.0.1:5000/bodies/0/organisations/0"
+            ],
+            "last_modified": "2014-01-08T14:28:31.568+0100"
+        }
+    ],
+    "organisations": [
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
+            "body": "http://127.0.0.1:5000/bodies/0",
+            "name": "Komische Partei Deutschlands (KoPaD)"
+        }
+    ]
 }
