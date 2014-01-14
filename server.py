@@ -122,13 +122,12 @@ else:
     app.config["SERVER_NAME"] = "refserv.oparl.de"
 
     def replace_hostname(m, hostname):
-        print type(m)
         if type(m) == dict:
             for key in m.keys():
-                m[key] = replace_hostname(m[key])
+                m[key] = replace_hostname(m[key], hostname)
         elif type(m) == list:
             for n in range(len(m)):
-                m[n] = replace_hostname(m[n])
+                m[n] = replace_hostname(m[n], hostname)
         elif type(m) == unicode:
             m = m.replace("127.0.0.1:5000", hostname)
         return m
