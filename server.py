@@ -9,6 +9,13 @@ app = Flask(__name__)
 # load model form one single JSON file
 model = json.load(open("data.json", "rb"))
 
+files = {}
+dirlist = os.listdir('documents')
+for f in dirlist:
+    (num, suffix) = f.split(".")
+    if num != '' and suffix != '':
+        files[num] = f
+
 
 def jsonify(data):
     """
@@ -65,6 +72,60 @@ def committee_details(committee):
     return jsonify(model["committees"][committee])
 
 
+@app.route("/bodies/0/papers/<int:paper>/auxiliary_documents/")
+def aux_documents_list(paper):
+    """
+    Show auxiliary documents for paper
+    """
+    #print(model["papers"][paper])
+    return jsonify(model["papers"][paper]["_refserver_links"]["auxiliary_documents"])
+
+
+@app.route("/bodies/0/papers/<int:paper>/documents/<int:document>")
+def document_details(paper, document):
+    """
+    Show details of one document
+    """
+    return jsonify(model["documents"][document])
+
+
+@app.route("/bodies/0/papers/<int:paper>/documents/<int:document>/access")
+def document_access(paper, document):
+    """
+    Send the document file
+    """
+    path = os.path.join("documents", files[str(document)])
+    app.logger.debug(path)
+    content = open(path, "rb").read()
+    headers = {
+        "X-TODO": "Last-Modified",
+        "Content-Length": len(content)
+    }
+    return Response(
+        headers=headers,
+        content_type=model["documents"][document]["mime_type"],
+        response=content)
+
+
+@app.route("/bodies/0/papers/<int:paper>/documents/<int:document>/download")
+def document_download(paper, document):
+    """
+    Send the document file with content-disposition
+    """
+    path = os.path.join("documents", files[str(document)])
+    app.logger.debug(path)
+    content = open(path, "rb").read()
+    headers = {
+        "X-TODO": "Last-Modified",
+        "Content-Length": len(content),
+        "Content-Disposition": 'attachment; filename="%s"' % model["documents"][document]["filename"]
+    }
+    return Response(
+        headers=headers,
+        content_type=model["documents"][document]["mime_type"],
+        response=content)
+
+
 @app.route("/bodies/0/meetings/")
 def meetings_list():
     """
@@ -95,6 +156,26 @@ def organisation_details(organisation):
     Show details of an organisation
     """
     return jsonify(model["organisations"][organisation])
+
+
+@app.route("/bodies/0/papers/")
+def papers_list():
+    """
+    Show all papers
+    """
+    return jsonify(gather_ids(model["papers"]))
+
+
+@app.route("/bodies/0/papers/<int:paper>")
+def paper_details(paper):
+    """
+    Show details of one paper
+    """
+    p = model["papers"][paper]
+    # delete links to related items
+    if "_refserver_links" in p:
+        del p["_refserver_links"]
+    return jsonify(p)
 
 
 @app.route("/bodies/0/people/")
