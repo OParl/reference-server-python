@@ -123,6 +123,7 @@
             "body": "http://127.0.0.1:5000/bodies/0",
             "reference": "OP-2014-0",
             "name": "Eine einfache Drucksache",
+            "published_date": "2014-01-08T12:00:00+0100",
             "documents": "http://127.0.0.1:5000/bodies/0/papers/0/documents/",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         }
