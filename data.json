@@ -1,23 +1,26 @@
 {
     "system": {
+        "@id": "http://127.0.0.1:5000/",
+        "@type": "OparlSystem",
         "name": "OParl Reference Server",
         "info_url": "https://github.com/OParl/reference-server",
         "product_url": "https://github.com/OParl/reference-server",
         "vendor_url": "http://oparl.de/",
         "oparl_version": "http://oparl.de/spezifikation/1.0/",
-        "bodies_url": "http://127.0.0.1:5000/bodies/",
+        "bodies": "http://127.0.0.1:5000/bodies/",
         "contact": {
             "name": "RIS-Betreuung",
             "email": "ris@stadt-koeln.de"
         },
-        "new_objects_url": "http://127.0.0.1:5000/_new/",
-        "updated_objects_url": "http://127.0.0.1:5000/_updated/",
-        "removed_objects_url": "http://127.0.0.1:5000/_removed/",
+        "new_objects": "http://127.0.0.1:5000/_new/",
+        "updated_objects": "http://127.0.0.1:5000/_updated/",
+        "removed_objects": "http://127.0.0.1:5000/_removed/",
         "license": "http://creativecommons.org/licenses/by/4.0/"
     },
     "bodies": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0",
+            "@type": "OparlBody",
             "name": "Stadt Köln",
             "name_long": "Stadt Köln, kreisfreie Stadt",
             "rgs": "053150000000",
@@ -27,37 +30,28 @@
                 "name": "RIS-Betreuung",
                 "email": "ris@stadt-koeln.de"
             },
-            "committees_url": "http://127.0.0.1:5000/bodies/0/committees/",
-            "organisations_url": "http://127.0.0.1:5000/bodies/0/organisations/",
-            "meetings_url": "http://127.0.0.1:5000/bodies/0/meetings/",
-            "people_url": "http://127.0.0.1:5000/bodies/0/people/",
-            "papers_url": "http://127.0.0.1:5000/bodies/0/papers/",
+            "committees": "http://127.0.0.1:5000/bodies/0/committees/",
+            "organisations": "http://127.0.0.1:5000/bodies/0/organisations/",
+            "meetings": "http://127.0.0.1:5000/bodies/0/meetings/",
+            "people": "http://127.0.0.1:5000/bodies/0/people/",
+            "papers": "http://127.0.0.1:5000/bodies/0/papers/",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
     "meetings": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/meetings/0",
+            "@type": "OparlMeeting",
             "body": "http://127.0.0.1:5000/bodies/0",
             "name": "Erste Sitzung des Hauptausschusses",
             "reference": "HA/0034/2014",
             "sequence_number": 1,
             "start": "2014-01-21T09:30:00+0100",
             "end": "2014-01-21T19:49:00+0100",
-            "committees": [
-                "http://127.0.0.1:5000/bodies/0/committees/0"
-            ],
-            "participants": [
-                "http://127.0.0.1:5000/bodies/0/people/0",
-                "http://127.0.0.1:5000/bodies/0/people/1",
-                "http://127.0.0.1:5000/bodies/0/people/2"
-            ],
+            "committees": "http://127.0.0.1:5000/bodies/0/meetings/0/committees/",
+            "participants": "http://127.0.0.1:5000/bodies/0/meetings/0/participants/",
             "location": {},
-            "agendaitems": [
-                "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/0",
-                "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/1",
-                "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/2"
-            ],
+            "agendaitems": "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/",
             "invitation": "http://127.0.0.1:5000/bodies/0/meetings/0/invitation",
             "verbatim_protocol": "http://127.0.0.1:5000/bodies/0/meetings/0/verbatim_protocol",
             "results_protocol": "http://127.0.0.1:5000/bodies/0/meetings/0/results_protocol",
@@ -67,21 +61,19 @@
     "committees": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/committees/0",
+            "@type": "OparlCommittee",
             "body": "http://127.0.0.1:5000/bodies/0",
             "name": "Hauptausschuss",
             "reference": "HA",
             "name_long": "Hauptausschuss der Stadt Köln",
-            "members": [
-                "http://127.0.0.1:5000/bodies/0/people/0",
-                "http://127.0.0.1:5000/bodies/0/people/1",
-                "http://127.0.0.1:5000/bodies/0/people/2"
-            ],
+            "members": "http://127.0.0.1:5000/bodies/0/committees/0/members/",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
     "people": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/0",
+            "@type": "OparlPerson",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Annemie",
             "last_name": "Hülchrath",
@@ -89,9 +81,7 @@
             "email": "annemie.huelchrath.koeln@abgeordnetenwatch.de",
             "phone": "+49 221 1234567",
             "address": "Alter Markt 1, 50123 Köln",
-            "committees": [
-                "http://127.0.0.1:5000/bodies/0/committees/0"
-            ],
+            "committees": "http://127.0.0.1:5000/bodies/0/people/0/committees/",
             "organisations": [
                 "http://127.0.0.1:5000/bodies/0/organisations/0"
             ],
@@ -99,6 +89,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/1",
+            "@type": "OparlPerson",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Herbert",
             "last_name": "Knebel",
@@ -112,6 +103,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/2",
+            "@type": "OparlPerson",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Horst",
             "last_name": "Schlämmer",
@@ -125,6 +117,7 @@
     "organisations": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
+            "@type": "OparlOrganisation",
             "body": "http://127.0.0.1:5000/bodies/0",
             "reference": "KoPaD",
             "name": "Komische Partei Deutschlands (KoPaD)",
