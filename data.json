@@ -21,6 +21,7 @@
         {
             "@id": "http://127.0.0.1:5000/bodies/0",
             "@type": "OparlBody",
+            "system": "http://127.0.0.1:5000/",
             "name": "Stadt Köln",
             "name_long": "Stadt Köln, kreisfreie Stadt",
             "rgs": "053150000000",
@@ -125,8 +126,56 @@
             "name": "Eine einfache Anfrage",
             "paper_type": "Anfrage",
             "published_date": "2014-01-08T12:00:00+0100",
-            "documents": "http://127.0.0.1:5000/bodies/0/papers/0/documents/",
-            "last_modified": "2014-01-08T14:28:31.568+0100"
+            "primary_document": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0",
+            "auxiliary_documents": "http://127.0.0.1:5000/bodies/0/papers/0/auxiliary_documents/",
+            "owners": "http://127.0.0.1:5000/bodies/0/papers/0/owners/",
+            "last_modified": "2014-01-08T14:28:31.568+0100",
+            "_refserver_links": {
+                "auxiliary_documents": [
+                    "http://127.0.0.1:5000/bodies/0/papers/0/documents/2"
+                ]
+            }
+        }
+    ],
+    "documents": [
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0",
+            "@type": "OparlDocument",
+            "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
+            "name": "Anfragedokument",
+            "mime_type": "TODO: ODT MimeType eintragen",
+            "filename": "OP-2014-0_Anfragedokument.odt",
+            "last_modified": "2014-01-08T14:28:31.568+0100",
+            "sha1_checksum": "58a4642c879d664b57322d61a74382f7017545e0",
+            "access_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0/access",
+            "download_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0/download",
+            "text": "Fraktion der\nKomischen Partei Deutschlands (KoPaD)\n\n\nAn die Oberbürgermeisterin\n\nAnfrage an die Verwaltung zum Thema Open Data\n\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\n\n1.  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua?\n2.  At vero eos et accusam et justo duo dolores et ea rebum? Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n3.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua? At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.\n\nDuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\n\nMit freundlichen Grüßen\n\n\n\nHorst Schlämmer\n\nStellvertr. Fraktionsvorsitzender"
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/1",
+            "@type": "OparlDocument",
+            "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
+            "name": "Anfragedokument",
+            "mime_type": "application/pdf",
+            "filename": "OP-2014-0_Anfragedokument.pdf",
+            "last_modified": "2014-01-08T14:28:31.568+0100",
+            "sha1_checksum": "6717e5e66fd305a03baf44d4ccc28332c9c5296c",
+            "access_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/1/access",
+            "download_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/1/download",
+            "master": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0"
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2",
+            "@type": "OparlDocument",
+            "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
+            "name": "Anlage 1 zur Anfrage",
+            "mime_type": "image/jpeg",
+            "filename": "OP-2014-0_Anlage_1_zur_Anfrage.jpg",
+            "last_modified": "2014-01-08T14:28:31.568+0100",
+            "sha1_checksum": "c42d491bd28d196d861f25e52f95843db54f02ee",
+            "access_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2/access",
+            "download_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2/download",
+            "text": null
         }
     ]
 }
