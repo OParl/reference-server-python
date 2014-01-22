@@ -2,6 +2,7 @@
 
 import os
 import json
+import copy
 from flask import Flask
 from flask import Response
 app = Flask(__name__)
@@ -171,7 +172,7 @@ def paper_details(paper):
     """
     Show details of one paper
     """
-    p = model["papers"][paper]
+    p = copy.deepcopy(model["papers"][paper])
     # delete links to related items
     if "_refserver_links" in p:
         del p["_refserver_links"]
