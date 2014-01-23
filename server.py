@@ -4,6 +4,7 @@ import os
 import json
 import copy
 from flask import Flask
+from flask import request
 from flask import Response
 app = Flask(__name__)
 
@@ -20,10 +21,17 @@ for f in dirlist:
 
 def jsonify(data):
     """
-    Create JSON response
+    Create JSON/JSON-P response
     """
-    return Response(content_type="application/json",
-        response=json.dumps(data, sort_keys=True, indent=4))
+    callback = request.args.get("callback", None)
+    content = json.dumps(data, sort_keys=True, indent=4)
+    mimetype = "application/json"
+    if callback is not None:
+        content = callback + "(" + content + ")"
+        mimetype = "application/json-p"
+    return Response(
+        content_type=mimetype,
+        response=content)
 
 
 def gather_ids(thelist):
