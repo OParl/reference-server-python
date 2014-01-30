@@ -73,13 +73,36 @@
     ],
     "people": [
         {
+            "@context": {
+                "dc": "http://purl.org/dc/terms/",
+                "foaf": "http://xmlns.com/foaf/0.1/",
+                "vcard": http://www.w3.org/2006/vcard/ns#",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                
+                "first_name": "foaf:firstName",
+                "last_name": "foaf:lastName",
+                "academic_title": "foaf:title",
+                "email": {
+                    "@id": "foaf:mbox",
+                    "@type": "@id"
+                },
+                "phone": {
+                    "@id": "foaf:phone"
+                },
+                "address": "vcard:street-address",
+                },
+                "last_modified": {
+                    "@id": "dc:modified",
+                    "@type": "xsd:dateTime"
+                },
+            }
             "@id": "http://127.0.0.1:5000/bodies/0/people/0",
             "@type": "OparlPerson",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Annemie",
             "last_name": "Hülchrath",
             "academic_title": "Dr.",
-            "email": "annemie.huelchrath.koeln@abgeordnetenwatch.de",
+            "email": "mailto:annemie.huelchrath.koeln@abgeordnetenwatch.de",
             "phone": "+49 221 1234567",
             "address": "Alter Markt 1, 50123 Köln",
             "committees": "http://127.0.0.1:5000/bodies/0/people/0/committees/",
