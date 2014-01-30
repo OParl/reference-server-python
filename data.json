@@ -90,7 +90,6 @@
                     "@id": "foaf:phone"
                 },
                 "address": "vcard:street-address",
-                },
                 "last_modified": {
                     "@id": "dc:modified",
                     "@type": "xsd:dateTime"
