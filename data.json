@@ -86,9 +86,7 @@
                     "@id": "foaf:mbox",
                     "@type": "@id"
                 },
-                "phone": {
-                    "@id": "foaf:phone"
-                },
+                "phone": "foaf:phone",
                 "address": "vcard:street-address",
                 "last_modified": {
                     "@id": "dc:modified",
