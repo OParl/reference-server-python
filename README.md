@@ -11,7 +11,7 @@ Eine öffentliche Instanz dieser Software läuft unter http://refserv.oparl.de/ 
 
 Der Reference Server ist nicht auf dem gleichen Stand wie die [Spezifikation](https://github.com/OParl/specs).
 
-Sobald die Sepzifikation 1.0 verabschieded ist, kann der Code daran angepasst werden.
+Sobald die Spezifikation 1.0 verabschieded ist, kann der Code daran angepasst werden.
 
 ## Installation
 
