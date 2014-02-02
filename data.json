@@ -12,9 +12,9 @@
             "name": "RIS-Betreuung",
             "email": "ris@stadt-koeln.de"
         },
-        "new_objects": "http://127.0.0.1:5000/_new/",
-        "updated_objects": "http://127.0.0.1:5000/_updated/",
-        "removed_objects": "http://127.0.0.1:5000/_removed/",
+        "new_objects": "http://127.0.0.1:5000/feeds/new/",
+        "updated_objects": "http://127.0.0.1:5000/feeds/updated/",
+        "removed_objects": "http://127.0.0.1:5000/feeds/removed/",
         "license": "http://creativecommons.org/licenses/by/4.0/"
     },
     "bodies": [
@@ -197,5 +197,10 @@
             "download_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2/download",
             "text": null
         }
+    ],
+    "removed_objects": [
+        "http://127.0.0.1:5000/bodies/0/papers/9999",
+        "http://127.0.0.1:5000/bodies/0/papers/9999/documents/1",
+        "http://127.0.0.1:5000/bodies/0/papers/9999/documents/2"
     ]
 }

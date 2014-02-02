@@ -3,6 +3,7 @@
 import os
 import json
 import copy
+from flask import abort
 from flask import Flask
 from flask import request
 from flask import Response
@@ -86,6 +87,9 @@ def aux_documents_list(paper):
     """
     Show auxiliary documents for paper
     """
+    if paper == 9999:
+        # removed document
+        abort(410)
     #print(model["papers"][paper])
     return jsonify(model["papers"][paper]["_refserver_links"]["auxiliary_documents"])
 
@@ -95,6 +99,9 @@ def document_details(paper, document):
     """
     Show details of one document
     """
+    if paper == 9999:
+        # removed document
+        abort(410)
     return jsonify(model["documents"][document])
 
 
@@ -103,6 +110,9 @@ def document_access(paper, document):
     """
     Send the document file
     """
+    if paper == 9999:
+        # removed document
+        abort(410)
     path = os.path.join("documents", files[str(document)])
     app.logger.debug(path)
     content = open(path, "rb").read()
@@ -121,6 +131,9 @@ def document_download(paper, document):
     """
     Send the document file with content-disposition
     """
+    if paper == 9999:
+        # removed document
+        abort(410)
     path = os.path.join("documents", files[str(document)])
     app.logger.debug(path)
     content = open(path, "rb").read()
@@ -180,6 +193,9 @@ def paper_details(paper):
     """
     Show details of one paper
     """
+    if paper == 9999:
+        # removed paper
+        abort(410)
     p = copy.deepcopy(model["papers"][paper])
     # delete links to related items
     if "_refserver_links" in p:
@@ -201,6 +217,22 @@ def person_details(person):
     Show details of a person
     """
     return jsonify(model["people"][person])
+
+
+@app.route("/feeds/<mode>/")
+def feed(mode):
+    """
+    Render a feed of new/updated/removed objects
+    """
+    if mode not in ["new", "updated", "removed"]:
+        abort(400)
+    data = []
+    if mode == "removed":
+        data = model["removed_objects"]
+    else:
+        # gathering objects
+        pass
+    return jsonify(data)
 
 
 if __name__ == "__main__":
