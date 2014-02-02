@@ -1,7 +1,7 @@
 {
     "system": {
         "@id": "http://127.0.0.1:5000/",
-        "@type": "OparlSystem",
+        "@type": "OParlSystem",
         "name": "OParl Reference Server",
         "info_url": "https://github.com/OParl/reference-server",
         "product_url": "https://github.com/OParl/reference-server",
@@ -20,7 +20,7 @@
     "bodies": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0",
-            "@type": "OparlBody",
+            "@type": "OParlBody",
             "system": "http://127.0.0.1:5000/",
             "name": "Stadt Köln",
             "name_long": "Stadt Köln, kreisfreie Stadt",
@@ -42,7 +42,7 @@
     "meetings": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/meetings/0",
-            "@type": "OparlMeeting",
+            "@type": "OParlMeeting",
             "body": "http://127.0.0.1:5000/bodies/0",
             "name": "Erste Sitzung des Hauptausschusses",
             "reference": "HA/0034/2014",
@@ -62,7 +62,7 @@
     "committees": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/committees/0",
-            "@type": "OparlCommittee",
+            "@type": "OParlCommittee",
             "body": "http://127.0.0.1:5000/bodies/0",
             "name": "Hauptausschuss",
             "reference": "HA",
@@ -94,7 +94,7 @@
                 }
             },
             "@id": "http://127.0.0.1:5000/bodies/0/people/0",
-            "@type": "OparlPerson",
+            "@type": "OParlPerson",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Annemie",
             "last_name": "Hülchrath",
@@ -108,7 +108,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/1",
-            "@type": "OparlPerson",
+            "@type": "OParlPerson",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Herbert",
             "last_name": "Knebel",
@@ -118,7 +118,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/2",
-            "@type": "OparlPerson",
+            "@type": "OParlPerson",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Horst",
             "last_name": "Schlämmer",
@@ -130,7 +130,7 @@
     "organisations": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
-            "@type": "OparlOrganisation",
+            "@type": "OParlOrganisation",
             "body": "http://127.0.0.1:5000/bodies/0",
             "reference": "KoPaD",
             "name": "Komische Partei Deutschlands (KoPaD)",
@@ -140,7 +140,7 @@
     "papers": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0",
-            "@type": "OparlPaper",
+            "@type": "OParlPaper",
             "body": "http://127.0.0.1:5000/bodies/0",
             "reference": "OP-2014-0",
             "name": "Eine einfache Anfrage",
@@ -160,7 +160,7 @@
     "documents": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0",
-            "@type": "OparlDocument",
+            "@type": "OParlDocument",
             "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
             "name": "Anfragedokument",
             "mime_type": "TODO: ODT MimeType eintragen",
@@ -173,7 +173,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/1",
-            "@type": "OparlDocument",
+            "@type": "OParlDocument",
             "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
             "name": "Anfragedokument",
             "mime_type": "application/pdf",
@@ -186,7 +186,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2",
-            "@type": "OparlDocument",
+            "@type": "OParlDocument",
             "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
             "name": "Anlage 1 zur Anfrage",
             "mime_type": "image/jpeg",
