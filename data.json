@@ -36,6 +36,7 @@
             "meetings": "http://127.0.0.1:5000/bodies/0/meetings/",
             "people": "http://127.0.0.1:5000/bodies/0/people/",
             "papers": "http://127.0.0.1:5000/bodies/0/papers/",
+            "created": "2014-01-08T14:28:31.568+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
@@ -56,7 +57,8 @@
             "invitation": "http://127.0.0.1:5000/bodies/0/meetings/0/invitation",
             "verbatim_protocol": "http://127.0.0.1:5000/bodies/0/meetings/0/verbatim_protocol",
             "results_protocol": "http://127.0.0.1:5000/bodies/0/meetings/0/results_protocol",
-            "last_modified": "2014-01-08T14:28:31.568+0100"
+            "created_modified": "2014-01-08T14:28:31.568+0100",
+            "last_modified": "2014-01-12T14:28:31.568+0100"
         }
     ],
     "committees": [

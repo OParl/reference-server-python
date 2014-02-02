@@ -227,12 +227,25 @@ def feed(mode):
     if mode not in ["new", "updated", "removed"]:
         abort(400)
     data = []
+    relevant_keys = ["bodies", "meetings", "committees", "people", "organisations", "papers", "documents"]
     if mode == "removed":
         data = model["removed_objects"]
-    else:
-        # gathering objects
-        pass
-    return jsonify(data)
+        return jsonify(data)
+    elif mode == "new":
+        # return all objects with "created" date in reverse order
+        for key in relevant_keys:
+            for item in model[key]:
+                if "created" in item:
+                    data.append(item)
+        data = sorted(data, key=lambda k: k['created'], reverse=True)
+    elif mode == "updated":
+        # return all objects with "last_modified" date in reverse order
+        for key in relevant_keys:
+            for item in model[key]:
+                if "last_modified" in item:
+                    data.append(item)
+        data = sorted(data, key=lambda k: k['last_modified'], reverse=True)
+    return jsonify(gather_ids(data))
 
 
 if __name__ == "__main__":
