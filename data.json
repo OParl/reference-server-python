@@ -57,7 +57,7 @@
             "invitation": "http://127.0.0.1:5000/bodies/0/meetings/0/invitation",
             "verbatim_protocol": "http://127.0.0.1:5000/bodies/0/meetings/0/verbatim_protocol",
             "results_protocol": "http://127.0.0.1:5000/bodies/0/meetings/0/results_protocol",
-            "created_modified": "2014-01-08T14:28:31.568+0100",
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-12T14:28:31.568+0100"
         }
     ],
@@ -70,6 +70,7 @@
             "reference": "HA",
             "name_long": "Hauptausschuss der Stadt Köln",
             "members": "http://127.0.0.1:5000/bodies/0/committees/0/members/",
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
@@ -106,6 +107,7 @@
             "address": "Alter Markt 1, 50123 Köln",
             "committees": "http://127.0.0.1:5000/bodies/0/people/0/committees/",
             "organisations": "http://127.0.0.1:5000/bodies/0/people/0/organisations/",
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         },
         {
@@ -116,6 +118,7 @@
             "last_name": "Knebel",
             "committees": "http://127.0.0.1:5000/bodies/0/people/1/committees/",
             "organisations": "http://127.0.0.1:5000/bodies/0/people/1/organisations/",
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         },
         {
@@ -126,6 +129,7 @@
             "last_name": "Schlämmer",
             "committees": "http://127.0.0.1:5000/bodies/0/people/2/committees/",
             "organisations": null,
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
@@ -136,6 +140,7 @@
             "body": "http://127.0.0.1:5000/bodies/0",
             "reference": "KoPaD",
             "name": "Komische Partei Deutschlands (KoPaD)",
+            "created": "2014-01-01T00:00:00+0100",
             "members": "http://127.0.0.1:5000/bodies/0/organisations/0/members/"
         }
     ],
@@ -151,6 +156,7 @@
             "primary_document": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0",
             "auxiliary_documents": "http://127.0.0.1:5000/bodies/0/papers/0/auxiliary_documents/",
             "owners": "http://127.0.0.1:5000/bodies/0/papers/0/owners/",
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100",
             "_refserver_links": {
                 "auxiliary_documents": [
@@ -167,6 +173,7 @@
             "name": "Anfragedokument",
             "mime_type": "TODO: ODT MimeType eintragen",
             "filename": "OP-2014-0_Anfragedokument.odt",
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100",
             "sha1_checksum": "58a4642c879d664b57322d61a74382f7017545e0",
             "access_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0/access",
@@ -180,6 +187,7 @@
             "name": "Anfragedokument",
             "mime_type": "application/pdf",
             "filename": "OP-2014-0_Anfragedokument.pdf",
+            "created": "2014-01-01T00:00:00+0100",
             "last_modified": "2014-01-08T14:28:31.568+0100",
             "sha1_checksum": "6717e5e66fd305a03baf44d4ccc28332c9c5296c",
             "access_url": "http://127.0.0.1:5000/bodies/0/papers/0/documents/1/access",
@@ -192,6 +200,7 @@
             "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
             "name": "Anlage 1 zur Anfrage",
             "mime_type": "image/jpeg",
+            "created": "2014-01-01T00:00:00+0100",
             "filename": "OP-2014-0_Anlage_1_zur_Anfrage.jpg",
             "last_modified": "2014-01-08T14:28:31.568+0100",
             "sha1_checksum": "c42d491bd28d196d861f25e52f95843db54f02ee",
