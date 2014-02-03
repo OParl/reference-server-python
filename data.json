@@ -10,7 +10,7 @@
         "bodies": "http://127.0.0.1:5000/bodies/",
         "contact": {
             "name": "RIS-Betreuung",
-            "email": "ris@stadt-koeln.de"
+            "email": "mailto:ris@stadt-koeln.de"
         },
         "new_objects": "http://127.0.0.1:5000/_new/",
         "updated_objects": "http://127.0.0.1:5000/_updated/",
@@ -29,7 +29,7 @@
             "url": "http://www.stadt-koeln.de/",
             "contact": {
                 "name": "RIS-Betreuung",
-                "email": "ris@stadt-koeln.de"
+                "email": "mailto:ris@stadt-koeln.de"
             },
             "committees": "http://127.0.0.1:5000/bodies/0/committees/",
             "organisations": "http://127.0.0.1:5000/bodies/0/organisations/",
