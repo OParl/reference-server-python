@@ -29,7 +29,7 @@ def jsonify(data):
     mimetype = "application/json"
     if callback is not None:
         content = callback + "(" + content + ")"
-        mimetype = "application/json-p"
+        mimetype = "application/javascript"
     return Response(
         content_type=mimetype,
         response=content)
