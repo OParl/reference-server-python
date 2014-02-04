@@ -79,6 +79,8 @@
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
                 "xsd": "http://www.w3.org/2001/XMLSchema#",
                 
+                "OParlPerson": "foaf:Person",
+                
                 "first_name": "foaf:firstName",
                 "last_name": "foaf:lastName",
                 "academic_title": "foaf:title",
