@@ -253,8 +253,8 @@ if __name__ == "__main__":
 else:
     # production mode - replace all URLs
     print("WARNING: Running reference server in production mode.")
-    print("You don't want that unless you are hosting http://refserv.oparl.de/")
-    app.config["SERVER_NAME"] = "refserv.oparl.de"
+    print("You don't want that unless you are hosting http://refserv.oparl.org/")
+    app.config["SERVER_NAME"] = "refserv.oparl.org"
 
     def replace_hostname(m, hostname):
         if type(m) == dict:

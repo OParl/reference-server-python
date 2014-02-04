@@ -5,7 +5,7 @@ Eine serverseitige Referenz-Implementierung der OParl API mit Beispieldaten.
 
 Dieser Server kann als Gegenstück für die Entwicklung des [Validierungs-Clients](https://github.com/OParl/validator) genutzt werden.
 
-Eine öffentliche Instanz dieser Software läuft unter http://refserv.oparl.de/ .
+Eine öffentliche Instanz dieser Software läuft unter http://refserv.oparl.org/ .
 
 ## Status
 
