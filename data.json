@@ -5,8 +5,8 @@
         "name": "OParl Reference Server",
         "info_url": "https://github.com/OParl/reference-server",
         "product_url": "https://github.com/OParl/reference-server",
-        "vendor_url": "http://oparl.de/",
-        "oparl_version": "http://oparl.de/spezifikation/1.0/",
+        "vendor_url": "http://oparl.org/",
+        "oparl_version": "http://oparl.org/spezifikation/1.0/",
         "bodies": "http://127.0.0.1:5000/bodies/",
         "contact": {
             "name": "RIS-Betreuung",
