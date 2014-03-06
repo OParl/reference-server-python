@@ -1,7 +1,7 @@
 {
     "system": {
         "@id": "http://127.0.0.1:5000/",
-        "@type": "OParlSystem",
+        "@type": "oparl:System",
         "name": "OParl Reference Server",
         "info_url": "https://github.com/OParl/reference-server",
         "product_url": "https://github.com/OParl/reference-server",
@@ -20,7 +20,7 @@
     "bodies": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0",
-            "@type": "OParlBody",
+            "@type": "oparl:Body",
             "system": "http://127.0.0.1:5000/",
             "name": "Stadt Köln",
             "name_long": "Stadt Köln, kreisfreie Stadt",
@@ -43,7 +43,7 @@
     "meetings": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/meetings/0",
-            "@type": "OParlMeeting",
+            "@type": "oparl:Meeting",
             "body": "http://127.0.0.1:5000/bodies/0",
             "name": "Erste Sitzung des Hauptausschusses",
             "reference": "HA/0034/2014",
@@ -64,7 +64,7 @@
     "committees": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/committees/0",
-            "@type": "OParlCommittee",
+            "@type": "oparl:Committee",
             "body": "http://127.0.0.1:5000/bodies/0",
             "name": "Hauptausschuss",
             "reference": "HA",
@@ -77,6 +77,7 @@
     "people": [
         {
             "@context": {
+                "oparl": "http://oparl.org/xyz/"
                 "dc": "http://purl.org/dc/terms/",
                 "foaf": "http://xmlns.com/foaf/0.1/",
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
@@ -97,7 +98,7 @@
                 }
             },
             "@id": "http://127.0.0.1:5000/bodies/0/people/0",
-            "@type": "OParlPerson",
+            "@type": "oparl:Person",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Annemie",
             "last_name": "Hülchrath",
@@ -112,7 +113,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/1",
-            "@type": "OParlPerson",
+            "@type": "oparl:Person",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Herbert",
             "last_name": "Knebel",
@@ -123,7 +124,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/2",
-            "@type": "OParlPerson",
+            "@type": "oparl:Person",
             "body": "http://127.0.0.1:5000/bodies/0",
             "first_name": "Horst",
             "last_name": "Schlämmer",
@@ -136,7 +137,7 @@
     "organisations": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
-            "@type": "OParlOrganisation",
+            "@type": "oparl:Organisation",
             "body": "http://127.0.0.1:5000/bodies/0",
             "reference": "KoPaD",
             "name": "Komische Partei Deutschlands (KoPaD)",
@@ -147,7 +148,7 @@
     "papers": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0",
-            "@type": "OParlPaper",
+            "@type": "oparl:Paper",
             "body": "http://127.0.0.1:5000/bodies/0",
             "reference": "OP-2014-0",
             "name": "Eine einfache Anfrage",
@@ -168,7 +169,7 @@
     "documents": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0",
-            "@type": "OParlDocument",
+            "@type": "oparl:Document",
             "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
             "name": "Anfragedokument",
             "mime_type": "application/vnd.oasis.opendocument.text",
@@ -182,7 +183,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/1",
-            "@type": "OParlDocument",
+            "@type": "oparl:Document",
             "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
             "name": "Anfragedokument",
             "mime_type": "application/pdf",
@@ -196,7 +197,7 @@
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2",
-            "@type": "OParlDocument",
+            "@type": "oparl:Document",
             "paper": "http://127.0.0.1:5000/bodies/0/papers/0",
             "name": "Anlage 1 zur Anfrage",
             "mime_type": "image/jpeg",
