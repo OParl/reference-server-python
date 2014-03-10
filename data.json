@@ -10,7 +10,7 @@
         "bodies": "http://127.0.0.1:5000/bodies/",
         "contact": {
             "name": "RIS-Betreuung",
-            "email": "ris@stadt-koeln.de"
+            "email": "mailto:ris@stadt-koeln.de"
         },
         "new_objects": "http://127.0.0.1:5000/feeds/new/",
         "updated_objects": "http://127.0.0.1:5000/feeds/updated/",
@@ -29,7 +29,7 @@
             "url": "http://www.stadt-koeln.de/",
             "contact": {
                 "name": "RIS-Betreuung",
-                "email": "ris@stadt-koeln.de"
+                "email": "mailto:ris@stadt-koeln.de"
             },
             "committees": "http://127.0.0.1:5000/bodies/0/committees/",
             "organisations": "http://127.0.0.1:5000/bodies/0/organisations/",
@@ -82,6 +82,8 @@
                 "foaf": "http://xmlns.com/foaf/0.1/",
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
                 "xsd": "http://www.w3.org/2001/XMLSchema#",
+                
+                "OParlPerson": "foaf:Person",
                 
                 "first_name": "foaf:firstName",
                 "last_name": "foaf:lastName",
