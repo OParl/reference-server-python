@@ -8,10 +8,8 @@
         "vendor_url": "http://oparl.org/",
         "oparl_version": "http://oparl.org/spezifikation/1.0/",
         "bodies": "http://127.0.0.1:5000/bodies/",
-        "contact": {
-            "name": "RIS-Betreuung",
-            "email": "mailto:ris@stadt-koeln.de"
-        },
+        "contact_name": "RIS-Betreuung",
+        "contact_email": "mailto:ris@stadt-koeln.de",
         "new_objects": "http://127.0.0.1:5000/feeds/new/",
         "updated_objects": "http://127.0.0.1:5000/feeds/updated/",
         "removed_objects": "http://127.0.0.1:5000/feeds/removed/",
@@ -27,10 +25,8 @@
             "rgs": "053150000000",
             "gnd_url": "http://d-nb.info/gnd/2015732-0",
             "url": "http://www.stadt-koeln.de/",
-            "contact": {
-                "name": "RIS-Betreuung",
-                "email": "mailto:ris@stadt-koeln.de"
-            },
+            "contact_name": "RIS-Betreuung",
+            "contact_email": "mailto:ris@stadt-koeln.de",
             "committees": "http://127.0.0.1:5000/bodies/0/committees/",
             "organisations": "http://127.0.0.1:5000/bodies/0/organisations/",
             "meetings": "http://127.0.0.1:5000/bodies/0/meetings/",
@@ -77,7 +73,7 @@
     "people": [
         {
             "@context": {
-                "oparl": "http://oparl.org/xyz/"
+                "oparl": "http://oparl.org/xyz/",
                 "dc": "http://purl.org/dc/terms/",
                 "foaf": "http://xmlns.com/foaf/0.1/",
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
