@@ -1,5 +1,23 @@
 {
     "system": {
+        "@context": {
+            "oparl": "http://oparl.org/xyz/",
+            "dc": "http://purl.org/dc/terms/",
+            "foaf": "http://xmlns.com/foaf/0.1/",
+            "skos": "http://www.w3.org/2004/02/skos/core#",  
+            "vcard": "http://www.w3.org/2006/vcard/ns#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+            "name": "skos:prefLabel",
+            "contact_email": {
+                "@id": "foaf:mbox",
+                "@type": "@id"
+            },
+            "license": {
+                "@id": "dc:license",
+                "@type": "@id"
+            }
+        },
         "@id": "http://127.0.0.1:5000/",
         "@type": "oparl:System",
         "name": "OParl Reference Server",
@@ -78,8 +96,6 @@
                 "foaf": "http://xmlns.com/foaf/0.1/",
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
                 "xsd": "http://www.w3.org/2001/XMLSchema#",
-                
-                "OParlPerson": "foaf:Person",
                 
                 "gender": "vcard:hasGender",
                 "first_name": "foaf:firstName",
