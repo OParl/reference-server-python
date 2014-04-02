@@ -107,6 +107,10 @@
                 },
                 "phone": "foaf:phone",
                 "address": "vcard:street-address",
+                "created": {
+                    "@id": "dc:created",
+                    "@type": "xsd:dateTime"
+                },
                 "last_modified": {
                     "@id": "dc:modified",
                     "@type": "xsd:dateTime"
