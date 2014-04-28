@@ -102,8 +102,8 @@
                 "xsd": "http://www.w3.org/2001/XMLSchema#",
                 
                 "gender": "vcard:hasGender",
-                "first_name": "foaf:firstName",
-                "last_name": "foaf:lastName",
+                "givenName": "foaf:firstName",
+                "familyName": "foaf:lastName",
                 "academic_degree": "foaf:title",
                 "email": {
                     "@id": "foaf:mbox",
