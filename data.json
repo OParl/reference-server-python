@@ -43,8 +43,8 @@
             "system": "http://127.0.0.1:5000/",
             "name": "Oparlhausen",
             "nameLong": {
-                "de": "Stadt Oparlhausen, fiktive Stadt",
-                "en": "City of Oparlhausen, ficticious Town"
+                "de": "Musterstadt Oparlhausen, fiktive Stadt",
+                "en": "Example City of Oparlhausen, ficticious Town"
             },
             "rgs": "099242500000",
             "equivalentBody": [
@@ -53,7 +53,7 @@
             "website": "http://www.oparlhausen.de/",
             "contactName": "OParl Server Betreuung",
             "contactEmail": "mailto:info@example.com",
-            "organization": "http://127.0.0.1:5000/bodies/0/organisations/",
+            "organization": "http://127.0.0.1:5000/bodies/0/organizations/",
             "meeting": "http://127.0.0.1:5000/bodies/0/meetings/",
             "member": "http://127.0.0.1:5000/bodies/0/people/",
             "paper": "http://127.0.0.1:5000/bodies/0/papers/",
@@ -67,32 +67,53 @@
             "@type": "oparl:Meeting",
             "body": "http://127.0.0.1:5000/bodies/0",
             "name": "Erste Sitzung des Hauptausschusses",
-            "reference": "HA/0034/2014",
-            "sequenceNumber": 1,
-            "start": "2014-01-21T09:30:00+0100",
-            "end": "2014-01-21T19:49:00+0100",
-            "committees": "http://127.0.0.1:5000/bodies/0/meetings/0/committees/",
-            "participants": "http://127.0.0.1:5000/bodies/0/meetings/0/participants/",
-            "location": {},
-            "agendaitems": "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/",
-            "invitation": "http://127.0.0.1:5000/bodies/0/meetings/0/invitation",
-            "verbatimProtocol": "http://127.0.0.1:5000/bodies/0/meetings/0/verbatim_protocol",
-            "resultsProtocol": "http://127.0.0.1:5000/bodies/0/meetings/0/results_protocol",
-            "created": "2014-01-01T00:00:00+0100",
-            "lastPodified": "2014-01-12T14:28:31.568+0100"
+            "start": "2014-01-07T09:30:00+0100",
+            "end": "2014-01-07T19:30:00+0100",
+            "organization": "http://127.0.0.1:5000/bodies/0/organizations/0",
+            "participant": [
+                "http://127.0.0.1:5000/bodies/0/people/0",
+                "http://127.0.0.1:5000/bodies/0/people/1",
+                "http://127.0.0.1:5000/bodies/0/people/2"
+            ],
+            "location": {
+                "description": "Rathaus, Raum 123"
+            },
+            "agendaItem": "http://127.0.0.1:5000/bodies/0/meetings/0/agendaitems/",
+            "invitation": "http://127.0.0.1:5000/bodies/0/documents/3",
+            "resultsProtocol": "http://127.0.0.1:5000/bodies/0/documents/4",
+            "verbatimProtocol": "http://127.0.0.1:5000/bodies/0/documents/5",
+            "created": "2013-12-01T13:00:00+0100",
+            "modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
-    "committees": [
+    "organizations": [
         {
-            "@id": "http://127.0.0.1:5000/bodies/0/committees/0",
-            "@type": "oparl:Committee",
+            "@id": "http://127.0.0.1:5000/bodies/0/organizations/0",
+            "@type": "oparl:Organization",
             "body": "http://127.0.0.1:5000/bodies/0",
-            "name": "Hauptausschuss",
-            "reference": "HA",
-            "nameLong": "Hauptausschuss der Stadt Köln",
-            "members": "http://127.0.0.1:5000/bodies/0/committees/0/members/",
+            "nameShort": "Hauptausschuss",
+            "nameLong": "Hauptausschuss der Musterstadt Oparlhausen",
+            "member": [
+                "http://127.0.0.1:5000/bodies/0/people/0",
+                "http://127.0.0.1:5000/bodies/0/people/1",
+                "http://127.0.0.1:5000/bodies/0/people/2"
+            ],
+            "created": "2013-01-01T00:00:00+0100",
+            "modified": "2014-07-01T14:28:31.568+0100"
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/organizations/1",
+            "@type": "oparl:organization",
+            "body": "http://127.0.0.1:5000/bodies/0",
+            "nameShort": "KoPaD",
+            "nameLong": "Komische Partei Deutschlands (KoPaD)",
+            "member": [
+                "http://127.0.0.1:5000/bodies/0/people/0",
+                "http://127.0.0.1:5000/bodies/0/people/1",
+                "http://127.0.0.1:5000/bodies/0/people/2"
+            ],
             "created": "2014-01-01T00:00:00+0100",
-            "lastModified": "2014-01-08T14:28:31.568+0100"
+            "modified": "2014-06-01T14:28:31.568+0100"
         }
     ],
     "people": [
@@ -103,7 +124,6 @@
                 "foaf": "http://xmlns.com/foaf/0.1/",
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
                 "xsd": "http://www.w3.org/2001/XMLSchema#",
-                
                 "gender": "vcard:hasGender",
                 "givenName": "foaf:firstName",
                 "familyName": "foaf:lastName",
@@ -126,7 +146,7 @@
             "@id": "http://127.0.0.1:5000/bodies/0/people/0",
             "@type": "oparl:Person",
             "body": "http://127.0.0.1:5000/bodies/0",
-            "gender": "female",
+            "gender": "vcard:Female",
             "name": "Dr. oec. troph Annemie Hülchrath",
             "givenName": "Annemie",
             "familyName": "Hülchrath",
@@ -136,9 +156,12 @@
             "streetAddress": "Alter Markt 1",
             "postalCode": "50123",
             "locality": "Köln",
-            "organizations": "http://127.0.0.1:5000/bodies/0/people/0/organisations/",
-            "created": "2014-01-01T00:00:00+0100",
-            "last_modified": "2014-01-08T14:28:31.568+0100"
+            "organization": [
+                "http://127.0.0.1:5000/bodies/0/organizations/0",
+                "http://127.0.0.1:5000/bodies/0/organizations/1"
+            ],
+            "created": "2013-01-01T00:00:00+0100",
+            "modified": "2014-01-08T14:28:31.568+0100"
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/1",
@@ -147,10 +170,13 @@
             "name": "Herbert Knebel",
             "givenName": "Herbert",
             "familyName": "Knebel",
-            "gender": "male",
-            "organizations": "http://127.0.0.1:5000/bodies/0/people/1/organisations/",
-            "created": "2014-01-01T00:00:00+0100",
-            "lastModified": "2014-01-08T14:28:31.568+0100"
+            "gender": "vcard:Male",
+            "organizations": [
+                "http://127.0.0.1:5000/bodies/0/organizations/0",
+                "http://127.0.0.1:5000/bodies/0/organizations/1"
+            ],
+            "created": "2013-01-01T00:00:00+0100",
+            "modified": "2014-01-08T14:28:31.568+0100"
         },
         {
             "@id": "http://127.0.0.1:5000/bodies/0/people/2",
@@ -159,21 +185,13 @@
             "name": "Horst Schlämmer",
             "givenName": "Horst",
             "familyName": "Schlämmer",
-            "gender": "eichhörnchen",
-            "organisations": [],
-            "created": "2014-01-01T00:00:00+0100",
-            "last_modified": "2014-01-08T14:28:31.568+0100"
-        }
-    ],
-    "organisations": [
-        {
-            "@id": "http://127.0.0.1:5000/bodies/0/organisations/0",
-            "@type": "oparl:Organisation",
-            "body": "http://127.0.0.1:5000/bodies/0",
-            "reference": "KoPaD",
-            "name": "Komische Partei Deutschlands (KoPaD)",
-            "created": "2014-01-01T00:00:00+0100",
-            "members": "http://127.0.0.1:5000/bodies/0/organisations/0/members/"
+            "gender": "vcard:Male",
+            "organizations": [
+                "http://127.0.0.1:5000/bodies/0/organizations/0",
+                "http://127.0.0.1:5000/bodies/0/organizations/1"
+            ],
+            "created": "2013-01-01T00:00:00+0100",
+            "modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
     "papers": [
@@ -187,7 +205,10 @@
             "publishedDate": "2014-01-08T12:00:00+0100",
             "primaryDocument": "http://127.0.0.1:5000/bodies/0/papers/0/documents/0",
             "auxiliaryDocuments": "http://127.0.0.1:5000/bodies/0/papers/0/auxiliary_documents/",
-            "owners": "http://127.0.0.1:5000/bodies/0/papers/0/owners/",
+            "originator": [
+                "http://127.0.0.1:5000/bodies/0/organizations/1",
+                "http://127.0.0.1:5000/bodies/0/people/2"
+            ],
             "created": "2014-01-01T00:00:00+0100",
             "lastModified": "2014-01-08T14:28:31.568+0100",
             "_refserver_links": {
@@ -239,6 +260,48 @@
             "accessUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2/access",
             "downloadUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/2/download",
             "text": ""
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/documents/3",
+            "@type": "oparl:Document",
+            "meeting": "http://127.0.0.1:5000/bodies/0/meetings/0",
+            "name": "Einladung Hauptausschuss",
+            "mimeType": "application/vnd.oasis.opendocument.text",
+            "created": "2013-12-04T00:00:00+0100",
+            "fileName": "HA-2014-7_Einladung.odt",
+            "lastModified": "2014-01-08T14:28:31.568+0100",
+            "sha1Checksum": "7da00b64089b9cbd7d3541b767e0b30fa017c763",
+            "accessUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/3/access",
+            "downloadUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/3/download",
+            "text": "Der Oberbürgermeister\n\n\nGeschäftsführung Hauptausschuss\nFrau Muster\n\n\nDatum: 4. Dezember 2013\n\n\n\nEinladung\n\nzur siebten Sitzung des Hauptausschusses in der Wahlperiode 2013/2018 am Dienstag, dem 7. Januar 2014, 9.30 Uhr im Rathaus, Raum 123.\n\nTagesordnung\n\n1. Mitteilungen des Oberbürgermeisters\n\n\n\ngez.\n\nDer Oberbürgermeister\n"
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/documents/4",
+            "@type": "oparl:Document",
+            "meeting": "http://127.0.0.1:5000/bodies/0/meetings/0",
+            "name": "Protokoll Hauptausschuss",
+            "mimeType": "application/vnd.oasis.opendocument.text",
+            "created": "2014-01-08T12:00:00+0100",
+            "fileName": "HA-2014-7_Protokoll.odt",
+            "lastModified": "2014-01-08T12:00:00+0100",
+            "sha1Checksum": "b5ae72616cc6f731852ef196217f84eb16fff876",
+            "accessUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/4/access",
+            "downloadUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/4/download",
+            "text": "Der Oberbürgermeister\n\n\nGeschäftsführung Hauptausschuss\nFrau Muster\n\n\nDatum: 8. Januar 2014\n\n\n\nNiederschrift\n\nder siebten Sitzung des Hauptausschusses in der Wahlperiode 2013/2018 vom Dienstag, dem 7. Januar 2014 um 9.30 Uhr im Rathaus, Raum 123.\n\nTagesordnungspunkt 1: Mitteilungen des Oberbürgermeisters\n\nDer Oberbürgermeister informiert, dass zum einzigen Tagesordnungspunkt dieser Sitzung, dem Teil Mitteilungen, keine Mitteilungen seinerseits vorliegen.\n\nDie Sitzung wird anschließend für beendet erklärt.\n\nEnde der Sitzung: 19.30 Uhr.\n\ngez.\n\nDer Oberbürgermeister\n"
+        },
+        {
+            "@id": "http://127.0.0.1:5000/bodies/0/documents/5",
+            "@type": "oparl:Document",
+            "meeting": "http://127.0.0.1:5000/bodies/0/meetings/0",
+            "name": "Wortprotokoll Hauptausschuss",
+            "mimeType": "application/vnd.oasis.opendocument.text",
+            "created": "2014-01-08T12:00:00+0100",
+            "fileName": "HA-2014-7_Wortprotokoll.odt",
+            "lastModified": "2014-01-08T13:00:00+0100",
+            "sha1Checksum": "98882086779665bffdcf4a575b701166af104ecb",
+            "accessUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/5/access",
+            "downloadUrl": "http://127.0.0.1:5000/bodies/0/papers/0/documents/5/download",
+            "text": "Der Oberbürgermeister\n\n\nGeschäftsführung Hauptausschuss\nFrau Muster\n\n\nDatum: 8. Januar 2014\n\n\n\nWortprotokoll\n\nder siebten Sitzung des Hauptausschusses in der Wahlperiode 2013/2018 vom Dienstag, dem 7. Januar 2014 um 9.30 Uhr im Rathaus, Raum 123.\n\nTagesordnungspunkt 1: Mitteilungen des Oberbürgermeisters\n\nOberbürgermeister:\n\nMeine sehr verehrten Damen und Herren, ich darf Ihnen eine erfreuliche Botschaft überbringen: es liegen keine Mitteilungen meinerseits vor.\n\nDamit ist der einzige Tagesordnungspunkt der Sitzung abgeschlossen. Ich schlage vor, Sie lümmeln in den restlichen 10 Stunden, die für die Sitzung vorgesehen sind, nach Herzenslust herum.\n\nMeine Damen und Herren, ich bitte Sie allmählich Ihre Sachen zu packen. Die Sitzung ist beendet. Ich wünsche Ihnen einen guten Heimweg.\n\n\ngez.\n\nHorst Schlämmer, Oberbürgermeister\nPeter Pan, Schriftführer\n"
         }
     ],
     "removed_objects": [
