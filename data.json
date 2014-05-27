@@ -29,7 +29,7 @@
             "http://127.0.0.1:5000/bodies/0"
         ],
         "contactName": "OParl Team",
-        "contactEmail": "mailto:ris@stadt-koeln.de",
+        "contactEmail": "mailto:info@oparl.org",
         "newObjects": "http://127.0.0.1:5000/feeds/new/",
         "updatedObjects": "http://127.0.0.1:5000/feeds/updated/",
         "removedObjects": "http://127.0.0.1:5000/feeds/removed/",
