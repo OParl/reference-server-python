@@ -33,29 +33,32 @@
         "newObjects": "http://127.0.0.1:5000/feeds/new/",
         "updatedObjects": "http://127.0.0.1:5000/feeds/updated/",
         "removedObjects": "http://127.0.0.1:5000/feeds/removed/",
-        "license": "http://creativecommons.org/licenses/by/4.0/"
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "licenseValidSinceDay": "2014-01-01"
     },
     "bodies": [
         {
             "@id": "http://127.0.0.1:5000/bodies/0",
             "@type": "oparl:Body",
             "system": "http://127.0.0.1:5000/",
-            "name": "Stadt Köln",
-            "nameLong": "Stadt Köln, kreisfreie Stadt",
-            "rgs": "053150000000",
-            "sameAs": [
-                "http://d-nb.info/gnd/2015732-0",
-                "http://www.stadt-koeln.de/",
-                "http://dbpedia.org/resource/Cologne"
+            "name": "Oparlhausen",
+            "nameLong": {
+                "de": "Stadt Oparlhausen, fiktive Stadt",
+                "en": "City of Oparlhausen, ficticious Town"
+            },
+            "rgs": "099242500000",
+            "equivalentBody": [
+                "http://d-nb.info/1039042538"
             ],
-            "contactName": "RIS-Betreuung",
-            "contactEmail": "mailto:ris@stadt-koeln.de",
-            "organizations": "http://127.0.0.1:5000/bodies/0/organisations/",
-            "meetings": "http://127.0.0.1:5000/bodies/0/meetings/",
-            "people": "http://127.0.0.1:5000/bodies/0/people/",
-            "papers": "http://127.0.0.1:5000/bodies/0/papers/",
+            "website": "http://www.oparlhausen.de/",
+            "contactName": "OParl Server Betreuung",
+            "contactEmail": "mailto:info@example.com",
+            "organization": "http://127.0.0.1:5000/bodies/0/organisations/",
+            "meeting": "http://127.0.0.1:5000/bodies/0/meetings/",
+            "member": "http://127.0.0.1:5000/bodies/0/people/",
+            "paper": "http://127.0.0.1:5000/bodies/0/papers/",
             "created": "2014-01-08T14:28:31.568+0100",
-            "lastModified": "2014-01-08T14:28:31.568+0100"
+            "modified": "2014-01-08T14:28:31.568+0100"
         }
     ],
     "meetings": [
