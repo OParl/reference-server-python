@@ -15,6 +15,8 @@ model = json.load(open("data.json", "rb"))
 files = {}
 dirlist = os.listdir('documents')
 for f in dirlist:
+    if f[0] == ".":
+        continue
     (num, suffix) = f.split(".")
     if num != '' and suffix != '':
         files[num] = f
@@ -91,17 +93,24 @@ def aux_documents_list(paper):
         # removed document
         abort(410)
     #print(model["papers"][paper])
-    return jsonify(model["papers"][paper]["_refserver_links"]["auxiliary_documents"])
+    return jsonify(model["papers"][paper]["_refserver_links"]["auxiliaryDocuments"])
 
 
 @app.route("/bodies/0/papers/<int:paper>/documents/<int:document>")
-def document_details(paper, document):
+def paper_document_details(paper, document):
     """
     Show details of one document
     """
     if paper == 9999:
         # removed document
         abort(410)
+    return jsonify(model["documents"][document])
+
+@app.route("/bodies/0/documents/<int:document>")
+def document_details(document):
+    """
+    Show details of one document
+    """
     return jsonify(model["documents"][document])
 
 
@@ -122,7 +131,7 @@ def document_access(paper, document):
     }
     return Response(
         headers=headers,
-        content_type=model["documents"][document]["mime_type"],
+        content_type=model["documents"][document]["mimeType"],
         response=content)
 
 
@@ -140,11 +149,11 @@ def document_download(paper, document):
     headers = {
         "X-TODO": "Last-Modified",
         "Content-Length": len(content),
-        "Content-Disposition": 'attachment; filename="%s"' % model["documents"][document]["filename"]
+        "Content-Disposition": 'attachment; filename="%s"' % model["documents"][document]["fileName"]
     }
     return Response(
         headers=headers,
-        content_type=model["documents"][document]["mime_type"],
+        content_type=model["documents"][document]["mimeType"],
         response=content)
 
 
@@ -164,20 +173,20 @@ def meeting_details(meeting):
     return jsonify(model["meetings"][meeting])
 
 
-@app.route("/bodies/0/organisations/")
-def organisations_list():
+@app.route("/bodies/0/organizations/")
+def organizations_list():
     """
-    Show all organisations
+    Show all organizations
     """
-    return jsonify(gather_ids(model["organisations"]))
+    return jsonify(gather_ids(model["organizations"]))
 
 
-@app.route("/bodies/0/organisations/<int:organisation>")
-def organisation_details(organisation):
+@app.route("/bodies/0/organizations/<int:organization>")
+def organization_details(organization):
     """
-    Show details of an organisation
+    Show details of an organization
     """
-    return jsonify(model["organisations"][organisation])
+    return jsonify(model["organizations"][organization])
 
 
 @app.route("/bodies/0/papers/")
@@ -227,7 +236,7 @@ def feed(mode):
     if mode not in ["new", "updated", "removed"]:
         abort(400)
     data = []
-    relevant_keys = ["bodies", "meetings", "committees", "people", "organisations", "papers", "documents"]
+    relevant_keys = ["bodies", "meetings", "people", "organizations", "papers", "documents"]
     if mode == "removed":
         data = model["removed_objects"]
         return jsonify(data)
