@@ -21,14 +21,14 @@
         "@id": "http://127.0.0.1:5000/",
         "@type": "oparl:System",
         "name": "OParl Reference Server",
-        "infoUrl": "https://github.com/OParl/reference-server",
-        "productUrl": "https://github.com/OParl/reference-server",
-        "vendorUrl": "http://oparl.org/",
+        "website": "https://github.com/OParl/reference-server",
+        "product": "https://github.com/OParl/reference-server",
+        "vendor": "http://oparl.org/",
         "oparlVersion": "http://oparl.org/spezifikation/1.0/",
         "bodies": [
             "http://127.0.0.1:5000/bodies/0"
         ],
-        "contactName": "RIS-Betreuung",
+        "contactName": "OParl Team",
         "contactEmail": "mailto:ris@stadt-koeln.de",
         "newObjects": "http://127.0.0.1:5000/feeds/new/",
         "updatedObjects": "http://127.0.0.1:5000/feeds/updated/",
