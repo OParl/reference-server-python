@@ -1,17 +1,8 @@
-OParl Referenz-Server
-=====================
+## Dieser Server entspricht einer sehr frühen Version von OParl und verbleibt hier nur aus Gründen der Nachvollziehbarkeit
 
 Eine serverseitige Referenz-Implementierung der OParl API mit Beispieldaten.
 
 Dieser Server kann als Gegenstück für die Entwicklung des [Validierungs-Clients](https://github.com/OParl/validator) genutzt werden.
-
-Eine öffentliche Instanz dieser Software läuft unter http://refserv.oparl.org/ .
-
-## Status
-
-Der Reference Server ist nicht auf dem gleichen Stand wie die [Spezifikation](https://github.com/OParl/specs).
-
-Sobald die Spezifikation 1.0 verabschiedet ist, kann der Code daran angepasst werden. Gegenwärtig sind jedoch die Beispieldaten des Reference Server in einem aktuelleren Format als die der Spezifikation.
 
 ## Installation
 
