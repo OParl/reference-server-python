@@ -1,4 +1,8 @@
-## Dieser Server entspricht einer sehr frühen Version von OParl und verbleibt hier nur aus Gründen der Nachvollziehbarkeit
+**Dieses Repository basiert auf einer alten Version von OParl und
+wird nicht weiter entwickelt. Es verbleibt jedoch aus Gründen
+der Nachvollziehbarkeit auf GitHub.**
+
+----
 
 Eine serverseitige Referenz-Implementierung der OParl API mit Beispieldaten.
 
