@@ -1,5 +1,5 @@
 **Dieses Repository basiert auf einer alten Version von OParl und
-wird nicht weiter entwickelt. Es verbleibt jedoch aus Gründen
+wird nicht mehr weiter entwickelt. Es verbleibt jedoch aus Gründen
 der Nachvollziehbarkeit auf GitHub.**
 
 ----
